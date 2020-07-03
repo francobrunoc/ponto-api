@@ -1,0 +1,73 @@
+GET http://localhost:8081/register/list?employeeId=2
+Accept: application/json
+
+###
+
+
+DELETE http://localhost:8080/register/4
+Accept: application/json
+
+###
+
+DELETE http://localhost:8081/employees/2
+Accept: application/json
+
+###
+
+DELETE http://localhost:8080/clients/1
+Accept: application/json
+
+###
+POST http://localhost:8080/register/save
+Content-Type: application/json
+
+{
+  "employee": { "id": 3 },
+  "markingIn": "100",
+  "markingOut": "200",
+  "date": "2020-06-01T19:43:47.064+00:00",
+  "justification": "Atraso"
+}
+
+###
+GET http://localhost:8081/register/list
+Accept: application/json
+
+###
+POST http://localhost:8081/employees/save
+Content-Type: application/json
+
+{
+  "name": "Franco Bruno",
+  "enrolment": "12343678910",
+  "cpf": "01125237066",
+  "dateOfBirth": "1985-03-03",
+  "email": "francobrunovc@gmail.com",
+  "admissionDate": "2020-05-27",
+  "clients": [
+  ],
+  "scale": [
+
+  ]
+}
+
+###
+GET http://localhost:8081/employees/list
+Accept: application/json
+
+###
+POST http://localhost:8081/clients/save
+Content-Type: application/json
+
+{
+"companyName": "JBS Carnes",
+"fantasyName": "Frigorifico JBS"
+}
+
+###
+GET http://localhost:8081/clients/list
+Accept: application/json
+
+###
+
+
