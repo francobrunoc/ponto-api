@@ -1,3 +1,15 @@
+GET https://www.cepaberto.com/api/v3/cep
+Header-field: Authorization
+Content-Type: application/json
+
+{
+"cep": "01001000",
+  "token": "f77e0204d57c7b5fa30c746470e8af73"
+}
+
+
+
+###
 GET http://localhost:8081/register/list?employeeId=2
 Accept: application/json
 
